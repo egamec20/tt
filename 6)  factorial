@@ -1,0 +1,15 @@
+let n=0, producto=1
+let a=[]
+n=prompt("ingresa un valor numerico")
+if(n==" "){
+    console.log("ingrese un valor valido")
+}else{
+    for(let i=1; i<=n; i++){
+
+        producto=producto*i
+    
+        a.push(i+"*")    
+    }
+}
+
+console.log("el factoria del numero: "+n+" => "+a+" = "+producto)

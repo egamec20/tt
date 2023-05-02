@@ -1,0 +1,9 @@
+let suma=0
+let n1=prompt("ingrese un numero")
+let n2=prompt("ingrese la cantidad a multiplicar")
+n1=parseInt(n1)
+n2=parseInt(n2)
+for(let i=1; i<=n2; i++){
+    suma=suma+n1
+}
+console.log("el producto mediamte sumas sucesivas de: "+n1+" x "+n2+" = "+suma)

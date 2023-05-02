@@ -1,0 +1,18 @@
+let n=0, i=0, x=0
+n= prompt("ingrese un numero positivo y mayor a 1")
+
+if(n<=1){
+    console.log("POR FAVOR INGRESAR UN NUMERO VALIDO")
+
+}else{
+    for(let i=1; i<=n; i++){
+        if(n%i==0){
+            x++
+        }
+    }
+    if (x==2) {
+        console.log("el numero "+n+" es primo")  
+    } else {
+        console.log("el numero "+n+ " no es primo")
+    }
+}

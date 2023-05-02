@@ -1,0 +1,10 @@
+let n1=0, n2=1, nn=1, nb=0 
+    nb=prompt("ingrese la cantidad requerida")
+    let a=[] 
+    for(let i=0;i<nb;i++){
+        a.push(nn)
+        nn=n1+n2
+        n1=n2
+        n2=nn
+    }
+    console.log("la serie fibonacci es: "+a)

@@ -1,0 +1,16 @@
+let nb=0 , nex=0, p=1
+nb=prompt("ingre el numero de la base")
+nex=prompt("ingrese el numero del exponente")
+
+if(nex==0){
+    console.log("el numero :"+ nb +"^^0 = 1")
+    
+
+} if(nex==1){
+        console.log("el numero :"+ nb +"^^1 = "+ nb)
+    }if(nex>1){
+        for(let i=1; i<=nex; i++){
+            p=p*nb
+        }
+        console.log("el numero :"+nb+" ^^ "+nex+" = "+p)
+    }

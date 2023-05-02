@@ -1,0 +1,30 @@
+let n1=0; n2=1; nn=1; nb=10 ;x=0 ;
+    let a=[]; b=[]
+    for(let i=0;i<nb;i++){
+        a.push(nn)
+        nn=n1+n2
+        n1=n2
+        n2=nn
+    }
+    console.log("la serie fibonacci es: "+a)
+
+
+    for(let i=0; i<a.length; i++){
+        
+        let y=0
+        for(let j=1; j<=a[i]; j++){
+            
+            if(a[i]%j==0){
+                y=y+1
+                
+            }
+        }
+        
+        if(y==2){
+            x++
+            b.push(a[i])
+        }
+        
+    }
+    
+    console.log("los numeros primos son: "+b+"  =>su cantidad es: "+x)
